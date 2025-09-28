@@ -30,24 +30,30 @@ LINTU REST API GO + FIBER + MONGODB
   - `birds` - Lintujen tiedot
   - `uhanalaisuus` - Uhanalaisuusluokat
 
-## Lintuobjekti (Bird)
+### Lintuobjekti (Bird)
 
 ```json
 {
   "nimi": "Varis",
   "tieteellinenNimi": "Corvus corone",
-  "koko": {
-    "pituus_cm": 50,
-    "siipivali_cm": 100,
-    "paino_g": 500
-  },
-  "varitys": "Musta",
-  "elinymparisto": ["metsä", "kaupunki"],
-  "ravinto": ["hyönteiset", "siemenet"],
-  "uhanalaisuus": "Elinvoimainen (LC)"
+  "siipivali_cm": 100,
+  "varitys": "Musta, metallinhohtoinen",
+  "elinymparisto": ["metsät", "pellot", "asutusalueet"],
+  "ravinto": ["hyönteiset", "pienet nisäkkäät", "siemenet", "jätteet"],
+  "uhanalaisuus_id": 1
 }
 ```
 
-## TEHDYN KOHDAT
+### Uhanalaisuus
+
+```json
+{
+  "uhanalaisuus_id": 1,
+  "nimi": "Elinvoimainen",
+  "lyhenne": "LC"
+}
+```
+
+## TEHDYT KOHDAT
 
 Step 1 & 2
